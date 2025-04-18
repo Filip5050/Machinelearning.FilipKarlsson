@@ -35,7 +35,7 @@ similarity = cosine_similarity(feature_matrix)
 
 #Dash applikation
 app = Dash(__name__)
-
+server = app.server 
 app.layout = html.Div([
     html.H1("Filmrekommendationer", style={"color": "white", "textAlign": "center"}),
     dcc.Dropdown(
